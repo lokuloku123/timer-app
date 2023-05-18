@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>McDonald's Timer & Stopwatch</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="timer">00:00:00</div>
+  <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn" disabled>Pause</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <div class="settings">
+    <div class="switch">
+      <span class="switch-label">Timer</span>
+      <label class="switch-slider-label">
+        <input type="checkbox" class="switch-input" id="timerSwitch">
+        <span class="switch-slider"></span>
+      </label>
+      <span class="switch-label">Stopwatch</span>
+    </div>
+    <div id="timerSettings">
+      <label for="minutesInput">Minutes:</label>
+      <input type="number" id="minutesInput" min="0" value="0">
+      <label for="secondsInput">Seconds:</label>
+      <input type="number" id="secondsInput" min="0" value="0">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
